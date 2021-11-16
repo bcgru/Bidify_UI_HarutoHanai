@@ -1,0 +1,858 @@
+// overwrite
+html
+  font-family $family-content
+  font-size 16px
+  word-spacing 1px
+  -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+  box-sizing border-box
+  background-color $dark
+
+*,
+*::before,
+*::after
+  box-sizing border-box
+  margin 0
+li
+  list-style none
+
+h1, h2, h3, h4, h5
+  font-family $family-display
+input:focus
+  border none
+  outline none
+.page
+  background #161325
+
+header.header
+  position absolute
+  width 100%
+  z-index 9999
+  nav.navbar
+    display flex
+    justify-content space-between
+    &::before
+      display none
+    &::after
+      display none
+    .navbar-brand
+      height auto
+      padding 0
+      a
+        display block
+        img
+          width 50px
+          height auto
+          object-fit contain
+    .navbar-nav-wrap
+      ul.navbar-nav
+        display flex
+        flex-direction row
+        align-items: center
+        li
+          a
+            padding 10px 35px
+            font-size 1.5rem
+            text-transform uppercase
+            text-decoration none
+            color white
+.section.hero
+  height 100vh
+  background url(../images/landing-back.png)
+  background-size cover
+  padding-bottom 0 !important
+
+  .container
+    height 100%
+    .row
+      align-items stretch
+      height 100%
+      .hero-content
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        height 100%
+        h1
+          font-size 3rem
+          color white
+          span
+            color #F79420
+        p
+          font-size 1.5rem
+          color white
+      .hero-image
+        display flex
+        justify-content center
+        align-items center
+        height 100%
+        img
+          width: 100%
+          height: auto
+          object-fit: contain
+.logo-container
+  margin-bottom 50px
+  .logo
+    display flex
+    justify-content center
+    img
+      width 100%
+.section.hero.listing
+  height 50vh
+  background url(../images/listing-back.png)
+  background-size cover
+  padding-bottom 0 !important
+.section.live-auction
+  text-align center
+  .live-auctions
+    margin-top 30px
+
+.section.about
+  h3.section-title
+    color white
+  p.section-description
+    color white
+
+  .about-image
+    width 100%
+    img
+      width 100%
+
+
+.section.most-popular
+  text-align center
+  .popular-auctions
+    margin-top 30px
+
+.section.new-arrivals
+  text-align center
+  .new-auctions
+    margin-top 30px
+
+.section
+  padding-bottom 180px
+  span.section-sub-title
+    font-size 1.5rem
+    color #F79420
+  h3.section-title
+    padding 30px 0
+    font-size 2.75rem
+    color white
+  p.section-description
+    padding-bottom 30px
+    font-size 1.5rem
+    color white
+    &.fixed-width
+      max-width 600px
+      margin 0 auto
+
+.auction-list
+  .auction-item
+    padding 15px
+    margin-bottom 20px
+    border 3px solid #FFBF23
+    border-radius 12px
+    color white
+    a
+      text-decoration none
+      color white
+    .nft-image
+      display block
+      width 100%
+      padding-top 100%
+      border-radius 12px
+      overflow hidden
+      position relative
+      img
+        position absolute
+        width 100%
+        height 100%
+        top 0
+        left 0
+        bottom 0
+        right 0
+        object-fit cover
+    .nft-meta
+      display flex
+      justify-content space-between
+      span
+        color #F79420
+        img
+          width 12px
+          height 12px
+          object-fit contain
+    .auction-meta
+      display flex
+      justify-content space-between
+      h5
+        padding-right 10px
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+        color white
+      span
+        display flex
+        align-items center
+        white-space nowrap
+        color white
+        img
+          width 12px
+          height 12px
+          object-fit contain
+    .auction-balance
+      text-align left
+      .auction-price
+        color #F79420
+      p
+        display flex
+        justify-content space-between
+        padding 0 5px
+        margin 0
+    .auction-limit
+      .auction-limit-time
+        display flex
+        justify-content space-between
+        span
+          display flex
+          justify-content center
+          align-items center
+          width 42px
+          height 42px
+          font-size 1.15rem
+          background linear-gradient(#FFBF23, #F3A911, #F79420, #F78420)
+        .auction-limit-label
+          font-size 1rem
+          text-align center
+          background transparent
+    .auction-action
+      display flex
+      justify-content flex-end
+    .border-bottom
+      border-bottom 1px solid #5D5B62 !important
+
+
+footer.footer
+  padding-bottom 15px
+  background #171717
+  .footer-logo
+    img
+
+  .footer-menu
+    height 100%
+    border-top 1px solid #5D5B62 !important
+    ul
+      height 100%
+      display flex
+      justify-content space-around
+      align-items center
+      li
+        a
+          font-size 1.5rem
+          color white
+          text-decoration none
+  .copyright
+    font-size 1.5rem
+    text-align center
+    color white
+  .footer-social
+    height 100%
+    ul
+      height 100%
+      margin-bottom 0
+      display flex
+      justify-content center
+      align-items center
+      li
+        display flex
+        justify-content center
+        align-items center
+        width 34px
+        height 34px
+        margin 10px
+        background #5B605F
+        border 1px solid #70707000
+        border-radius 8px
+        a
+          display block
+          img
+            width 20px
+            height 20px
+        &.blank-back
+          background #00000000
+          border 1px solid #707070
+
+.listing-logo
+  display flex
+  justify-content center
+  .logo-image
+    margin-top -90px
+.hero-container
+  padding-bottom 50px
+  .hero-content
+    text-align center
+    color white
+
+.section.filter-section
+  padding-bottom 50px
+  .social-links
+    display flex
+    justify-content center
+    align-items center
+    ul
+      display flex
+      padding-left 0
+      li
+        display flex
+        justify-content center
+        align-items center
+        width 54px
+        height 54px
+        margin 10px
+        background #5B605F
+        border 1px solid #70707000
+        border-radius 8px
+        a
+          display block
+          img
+            width 24px
+            height 24px
+        &.blank-back
+          background #00000000
+          border 1px solid #707070
+  .search-box
+    display flex
+    justify-content center
+    .search-form
+      .form-wrap
+        position relative
+        padding 5px 50px 5px 5px
+        border 1px solid #707070
+        border-radius 8px
+        .search-form-input
+          border none
+          background none
+          width 360px
+          font-size 1.25rem
+          color white
+        .search-button
+          position absolute
+          display flex
+          justify-content center
+          align-items center
+          top 8px
+          right 10px
+          width: 28px
+          height: 28px
+          background #5b605f
+          border 0
+          border-radius 4px
+
+.auction-container
+  color white
+  padding-top 150px
+  .row
+    margin-bottom 30px
+
+  .auction-image
+    height 100%
+    img
+      width 100%
+      height 100%
+      object-fit contain
+  .auction-content
+    color white
+    .auction-meta
+      display flex
+      justify-content space-between
+      align-items center
+      width 100%
+      margin-bottom 30px
+      .collection-name
+        font-size 3rem
+        color #F79420
+    .auction-name
+      font-size 3rem
+      padding-bottom 20px
+      border-bottom 1px solid #5b605f
+      word-break: keep-all;
+    .auction-status
+      padding 30px 0
+      font-size 2rem
+      font-weight 700
+    .auction-limit
+      margin-bottom 100px
+      .auction-limit-time
+        display flex
+        justify-content center
+        span
+          display flex
+          justify-content center
+          align-items center
+          margin 0 15px
+          padding 15px
+          width 25%
+          font-size 3rem
+          background linear-gradient(#FFBF23, #F3A911, #F79420, #F78420)
+      .auction-limit-label
+        display flex
+        justify-content center
+        span
+          display block
+          margin 0 15px
+          width 25%
+          font-size 1.5rem
+          text-align center
+    .next-bid-amount
+      display flex
+      justify-content space-between
+      margin-bottom 15px
+      label
+        font-size 1.25rem
+      b
+        font-size 1.25rem
+    .bid-action
+      span
+        display block
+        width 100%
+        background #26213d
+        font-size 1.5rem
+        margin-bottom 15px
+        padding 5px 45px
+        text-align center
+        color white
+      .bid-box
+        display flex
+        justify-content space-between
+        .bid-amount
+          width 50%
+          margin-right 15px
+          input.bid-amount-input
+            width 100%
+            padding 5px 15px
+            background #00000000
+            font-size 1.25rem
+            border 1px solid #707070
+            border-radius 8px
+        .bid-button
+          width 50%
+      .finish-button
+        width 100%
+  .auction-description
+    padding 30px
+    margin-bottom 25px
+    background #26213D
+    border-radius 12px
+    color white
+    .description-title
+      font-size 1.5rem
+      color #F79420
+    p
+      font-size 1.25rem
+      word-break: keep-all;
+  .auction-details
+    padding 30px
+    background #26213D
+    border-radius 12px
+    color white
+    .details-title
+      font-size 1.5rem
+      color #F79420
+    p
+      display flex
+      justify-content space-between
+      font-size 1.25rem
+.bidify-section
+  padding-bottom 50px
+.bidify-data-section
+  border 1px solid #5B605F55
+  border-radius 12px
+  overflow hidden
+  .section-header
+    background #26213D
+    padding 15px 30px
+    .section-title
+      margin-bottom 0
+      font-size 2rem
+      color white
+  .section-container
+    padding 30px 50px
+    font-size 1.25rem
+    color white
+    table
+      display: table;
+      width: 100%;
+      overflow: auto;
+      thead
+        border-bottom 1px solid #707070
+        th
+          padding 5px 15px
+      td
+        padding 5px 15px
+
+.social-share-links
+  display flex
+  justify-content center
+  align-items center
+  ul
+    display flex
+    li
+      display flex
+      justify-content center
+      align-items center
+      width 54px
+      height 54px
+      margin 10px
+      background #5B605F
+      border 1px solid #70707000
+      border-radius 8px
+      a
+        display block
+      &.blank-back
+        background #00000000
+        border 1px solid #707070
+.pagination
+  display flex
+  justify-content center
+  ul
+    display flex
+    padding 0
+    li
+      margin 5px
+      a
+        display flex
+        justify-content center
+        align-items center
+        width 64px
+        height 64px
+        background #5B605F
+        font-size 1.5rem
+        color white
+        border-radius 12px
+        text-decoration none
+        &.disabled
+          background #F79420
+
+section.error
+  position absolute
+  display flex
+  justify-content center
+  width 100vw
+  height 100vh
+  top 0
+  left 0
+  background url(../images/error-back.png)
+  background-size cover
+  background-repeat no-repeat
+  .error-button
+    position absolute
+    bottom 50px
+
+.page-loader
+  position fixed
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  width 100vw
+  height 100vh
+  top 0
+  left 0
+  background #26213D
+  z-index 9
+  .page-loader-body
+    .preloader-wrapper
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      span
+        margin-top 30px
+        font-size 1.5rem
+        color white
+.mobile-nav
+  display none !important
+
+.balance
+  .label
+    padding 0
+    small
+      color #333333
+
+footer.footer .footer-logo
+  width 100%
+  img
+    width 100%
+
+.auction-modal
+  .auction-container
+    padding-top 0
+    .row
+      margin-bottom 30px
+    .auction-message
+      p
+        .congr-text
+          font-size 1.15rem
+          font-weight bold
+          color #F79420
+    .auction-image
+      height 100%
+      img
+        width 100%
+        height 100%
+        object-fit contain
+    .auction-content
+      color white
+      .auction-meta
+        display flex
+        justify-content space-between
+        align-items center
+        width 100%
+        margin-bottom 30px
+        .collection-name
+          font-size 1.5rem
+          color #F79420
+      .auction-name
+        font-size 1.5rem
+        padding-top 1rem
+        padding-bottom 0
+        border-bottom 0
+        word-break keep-all
+        cursor pointer
+        &.collapse-name
+          white-space nowrap
+          text-overflow ellipsis
+          overflow hidden
+          max-width 280px
+      .next-bid-amount
+        align-items center
+        padding-top 1rem
+        img
+          width 20px
+          margin-right 10px
+        p
+          margin-bottom 0
+          word-break: keep-all;
+          white-space: nowrap;
+      .auction-status
+        padding 30px 0
+        font-size 2rem
+        font-weight 700
+      .auction-limit
+        margin-bottom 10px
+        .auction-limit-time
+          display flex
+          justify-content center
+          span
+            display flex
+            justify-content center
+            align-items center
+            margin 0 15px
+            padding 15px
+            width 25%
+            font-size 1.5rem
+            background linear-gradient(#FFBF23, #F3A911, #F79420, #F78420)
+        .auction-limit-label
+          display flex
+          justify-content center
+          span
+            display block
+            margin 0 15px
+            width 25%
+            font-size 1.15rem
+            text-align center
+      .next-bid-amount
+        display flex
+        justify-content space-between
+        margin-bottom 15px
+        label
+          font-size 1.25rem
+        b
+          font-size 1.25rem
+      .bid-action
+        span
+          display block
+          width 100%
+          background #26213d
+          font-size 1.5rem
+          margin-bottom 15px
+          padding 5px 45px
+          text-align center
+          color white
+        .bid-box
+          display flex
+          flex-direction column
+          justify-content space-between
+          .bid-amount
+            width 100%
+            margin-right 15px
+            input.bid-amount-input
+              width 100%
+              padding 5px 15px
+              background #00000000
+              font-size 1.25rem
+              border 1px solid #707070
+              border-radius 8px
+          .bid-button
+            width 100%
+            margin-top 15px
+        .finish-button
+          width 100%
+    .auction-description
+      padding 30px
+      margin-bottom 25px
+      background #26213D
+      border-radius 12px
+      color white
+      .description-title
+        font-size 1.5rem
+        color #F79420
+      p
+        font-size 1.25rem
+    .auction-details
+      padding 30px
+      background #26213D
+      border-radius 12px
+      color white
+      .details-title
+        font-size 1.5rem
+        color #F79420
+      p
+        display flex
+        justify-content space-between
+        font-size 1.25rem
+  .finished-auction
+    .next-bid-amount
+      span
+        font-size 1.15rem
+    .auction-image
+      max-width 320px
+      margin 0 auto
+    .social-share-links
+      display flex
+      justify-content center
+      align-items center
+      ul
+        display flex
+        li
+          display flex
+          justify-content center
+          align-items center
+          width 54px
+          height 54px
+          margin 10px
+          background #5B605F
+          border 1px solid #70707000
+          border-radius 8px
+          a
+            display block
+          &.blank-back
+            background #00000000
+            border 1px solid #707070
+.success-container
+  .success-title
+    color #F79420
+  .auction-image
+    max-width 200px
+    margin 10px auto
+    img
+      width 100%
+  .collection-name
+    font-size 0.75rem
+    color #F79420
+    text-align center
+  .auction-name
+    font-size 0.75rem
+    padding-top 0
+    padding-bottom 0
+    border-bottom 0
+    text-align center
+  .auction-name-color
+    color #F79420
+  p
+    padding-top 30px
+    font-size 1rem
+    font-weight bold
+    text-align center
+
+.auction-info
+  p
+    word-break: normal;
+
+@media (max-width: 991px)
+  header.header
+    position relative
+
+    .desktop-nav
+      display none !important
+    .mobile-nav
+      display inline-block !important
+  
+  .navbar-nav
+    margin 15px
+    li
+      padding 5px
+      a
+        color #333333
+        text-decoration none
+      &.active
+        a
+          color #F79420
+  .balance
+    padding 5px
+    padding-top 15px !important
+    border-top 1px solid #f0f0f0
+    .el-button
+      width 100% !important
+      background transparent !important
+      color #333333 !important
+
+  .hero-image
+    display none !important
+  footer.footer .footer-menu ul
+    flex-direction column
+    align-items flex-start
+
+  .section.filter-section .social-links ul li
+    width 32px
+    height 32px
+    img
+      width 14px
+      height 14px
+  .section.filter-section .search-box .search-form .form-wrap .search-form-input
+    width 200px
+  .pagination ul li a
+    width 24px
+    height 24px
+    font-size 1rem
+    border-radius 4px
+    img
+      width 12px
+      height 12px
+  .auction-container .auction-content .auction-meta
+    flex-direction column
+  .social-share-links ul li
+    width 32px
+    height 32px
+    img
+      width 14px
+      height 14px
+
+  .auction-container .auction-content .auction-limit .auction-limit-time span
+    font-size 1.5rem
+  .auction-container .auction-content .auction-limit .auction-limit-label span
+    font-size 1.15rem
+
+  .bidify-button
+    font-size 1.15rem !important
+  .bidify-data-section .section-container table
+    display inline-block
+  .e-dialog
+    padding 0
+  .auction-modal .auction-container .auction-content .auction-status
+    font-size 1.5rem
+  .auction-modal .auction-container .auction-content .auction-limit span
+    font-size 1rem !important
+    padding 5px 2.5px !important
+    margin 0 2.5px !important
